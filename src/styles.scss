@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary-font: Arial, Helvetica, sans-serif;
+$secondary-font: Cambria, Georgia, serif;
+
+@mixin body-input-button-styles {
+  color: #333;
+  font-family: $secondary-font;
+}
+
+body {
+  h1 {
+    color: #369;
+    font-family: $primary-font;
+    font-size: 250%;
+  }
+
+  h2,
+  h3 {
+    color: #444;
+    font-family: $primary-font;
+    font-weight: lighter;
+  }
+
+  margin: 2em;
+  @include body-input-button-styles();
+}
+
+* {
+  font-family: $primary-font;
+}
